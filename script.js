@@ -19,6 +19,9 @@ class productProperties {
 //Adding Inheritance
 class PerishableProductProperties extends productProperties {
     constructor(name, price, quantity, expirationDate) {
-        
+        super(name, price, quantity);
+        this.expirationDate = expirationDate;  //Added the new property
     }
+
+    
 }
