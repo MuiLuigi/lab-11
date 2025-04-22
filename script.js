@@ -44,6 +44,11 @@ class ClassProperties {
     addProduct(product) {
         this.products.push(product);
     }
+
+    getInventoryValue() {
+        return this.products.reduce((totalPrice, productPrice) =>
+        totalPrice + productPrice.getInventoryValue(), 0);
+    }
 }
 
 const product1 = new PerishableProductProperties("Soap", 2.99, 2, "04-23-2025");  //Instance 1
