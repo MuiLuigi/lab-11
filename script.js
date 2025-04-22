@@ -11,7 +11,7 @@ class productProperties {
     }
 
     toString() {
-        console.log(`Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`);
+        return `Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`;
     }
 }
 
@@ -23,5 +23,7 @@ class PerishableProductProperties extends productProperties {
         this.expirationDate = expirationDate;  //Added the new property
     }
 
-    
+    toString() {
+        return `${super.toString()}, Expiration Date: ${this.expirationDate}`;  //Returns all the information with the expiration date now added to the information
+    }
 }
