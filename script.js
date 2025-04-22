@@ -36,5 +36,13 @@ class PerishableProductProperties extends productProperties {
     }
 }
 
+class ClassProperties {
+    constructor() {
+        this.products = []  //Array to store products and their information
+    }
+}
+
+
+
 const product1 = new PerishableProductProperties("Soap", 2.99, 2, "04-23-2025");  //Instance 1
 const product2 = new PerishableProductProperties("Bread", 1.99, 3, "04-25-2025");  //Instance 2
