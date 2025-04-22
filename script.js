@@ -27,3 +27,5 @@ class PerishableProductProperties extends productProperties {
         return `${super.toString()}, Expiration Date: ${this.expirationDate}`;  //Returns all the information with the expiration date now added to the information
     }
 }
+
+const product1 = new PerishableProductProperties("Soap", 2.99, 2, "04-23-2025");  //Instance 1
