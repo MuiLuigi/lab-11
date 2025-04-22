@@ -6,6 +6,8 @@ class productProperties {
     }
 
     getTotalValue() {
-        
+        return this.price * this.quantity;
     }
+
+    
 }
