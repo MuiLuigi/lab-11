@@ -16,7 +16,10 @@ class productProperties {
 
     //Static Methods and Properties
     static applyDiscount(products, discount) {
-        
+        products.array.forEach(product => {
+            product.price = product.price * (1 - discount);
+            console.log(`The discount has been applied to: ${this.name}. The price after the discount is: $${product.price.toFixed(2)}`)
+        });
     }
 }
 
