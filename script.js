@@ -9,5 +9,7 @@ class productProperties {
         return this.price * this.quantity;
     }
 
-    
+    toString() {
+        
+    }
 }
