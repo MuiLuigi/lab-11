@@ -75,7 +75,7 @@ console.log(`Your total is: $${productStore.getInventoryValue()}.`);
 
 productProperties.applyDiscount(productStore.products, 0.15);  //Applies the 15% discount
 
-console.log(`Your total after applying the discount is: $${productStore.getInventoryValue()}.`);
+console.log(`Your total after applying the discount is: $${productStore.getInventoryValue().toFixed(2)}.`);
 
 const findProduct = "mario kart 8 deluxe";
 const productFound = productStore.findProductByName(findProduct);
