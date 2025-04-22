@@ -36,6 +36,7 @@ class PerishableProductProperties extends productProperties {
     }
 }
 
+//Store Management
 class ClassProperties {
     constructor() {
         this.products = []  //Array to store products and their information
@@ -48,6 +49,10 @@ class ClassProperties {
     getInventoryValue() {
         return this.products.reduce((totalPrice, productPrice) =>
         totalPrice + productPrice.getInventoryValue(), 0);
+    }
+
+    findProductByName(name) {
+        return this.products.find(product => product.name.toLowerCase() === name.toLowerCase()) || null;
     }
 }
 
