@@ -1,3 +1,4 @@
+//Setting up the classes
 class productProperties {
     constructor(name, price, quantity) {
         this.name = name;
@@ -10,6 +11,6 @@ class productProperties {
     }
 
     toString() {
-        
+        console.log(`Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`);
     }
 }
