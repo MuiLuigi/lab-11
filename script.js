@@ -14,3 +14,9 @@ class productProperties {
         console.log(`Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`);
     }
 }
+
+
+//Adding Inheritance
+class PerishableProductProperties extends productProperties {
+    
+}
