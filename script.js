@@ -60,9 +60,9 @@ const product2 = new PerishableProductProperties("Bread", 1.99, 3, "04-25-2025")
 
 
 //Testing the System
-const product3 = new productProperties("Mario Kart 8 Deluxe", 49.99, 1, "03-10-2026");  //Instance 3
-const product4 = new productProperties("Milk", 2.99, 2, "04-25-2025");  //Instance 4
-const product5 = new productProperties("Cookies", 3.99, 4, "04-25-2025");  //Instance 5
+const product3 = new productProperties("Mario Kart 8 Deluxe", 49.99, 1);  //Instance 3
+const product4 = new productProperties("Milk", 2.99, 2);  //Instance 4
+const product5 = new productProperties("Cookies", 3.99, 4);  //Instance 5
 
 const productStore = new ClassProperties();  //Adding products to the array
 productStore.addProduct(product1);
