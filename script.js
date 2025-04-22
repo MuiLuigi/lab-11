@@ -13,6 +13,11 @@ class productProperties {
     toString() {
         return `Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`;
     }
+
+    //Static Methods and Properties
+    static applyDiscount(products, discount) {
+        
+    }
 }
 
 
