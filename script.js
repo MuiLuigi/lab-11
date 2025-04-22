@@ -4,4 +4,8 @@ class productProperties {
         this.price = price;
         this.quantity = quantity;
     }
+
+    getTotalValue() {
+        
+    }
 }
